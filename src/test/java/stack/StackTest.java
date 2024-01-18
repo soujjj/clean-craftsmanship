@@ -55,8 +55,8 @@ public class StackTest {
   @Test
   public void afterPushingX_willPopX() throws Exception {
     stack.push(99);
-    assertEquals(99, stack.pop());
     stack.push(88);
     assertEquals(88, stack.pop());
+    assertEquals(99, stack.pop());
   }
 }

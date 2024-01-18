@@ -3,23 +3,21 @@ package stack;
 public class Stack {
 
   private int size = 0;
-  private int element;
+  private int[] elements = new int[2];
 
   public boolean isEmpty() {
     return size == 0;
   }
 
   public void push(int element) {
-    this.size++;
-    this.element = element;
+    this.elements[this.size++] = element;
   }
 
   public int pop() {
     if (size == 0) {
       throw new Underflow();
     }
-    --this.size;
-    return this.element;
+    return this.elements[--this.size];
   }
 
   public int getSize() {

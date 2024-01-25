@@ -1,4 +1,3 @@
 package bowling;
 
-public class Frame {
-}
+public class Frame {}
